@@ -5,7 +5,7 @@ import cv2
 from tensorflow.keras.models import load_model
 
 # Loading the Model
-model = load_model('E:/MY PHD FILE/Image Pre-processing/Test_Disease.h5', compile=False)
+model = load_model('Test_Disease.h5', compile=False)
 
 # Name of Classes
 CLASS_NAMES = ['Good_Leaf', 'Red_Rust', 'Red_Spider_Mite','Brown_Blight']
