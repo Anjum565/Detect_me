@@ -2,7 +2,7 @@
 import numpy as np
 import streamlit as st
 import cv2
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 # Loading the Model
 model = load_model('E:/MY PHD FILE/Image Pre-processing/Test_Disease.h5', compile=False)
