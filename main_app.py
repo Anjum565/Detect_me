@@ -42,7 +42,7 @@ st.markdown(f'<p style="font-size:18px;"><b>Upload an image of the plant leaf</b
 
 st.markdown(f'<p style="font-size:18px;">Choose an image...</p>', unsafe_allow_html=True)
 # Uploading the Plant image
-plant_image = st.file_uploader("", type="png")
+plant_image = st.file_uploader("", type=["png" , "jpg"])
 submit = st.button('Predict')
 
 # On predict button click
