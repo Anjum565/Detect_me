@@ -57,10 +57,10 @@ if submit:
         st.write(opencv_image.shape)
 
         # Resizing the image
-        opencv_image = cv2.resize(opencv_image, (640, 640))
+        opencv_image = cv2.resize(opencv_image, (1000, 1000))
 
         # Convert image to 4 Dimension
-        opencv_image.shape = (1, 640, 640, 3)
+        opencv_image.shape = (1, 1000, 1000, 3)
 
         # Make Prediction
         Y_pred = model.predict(opencv_image)
